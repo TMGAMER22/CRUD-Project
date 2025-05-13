@@ -42,6 +42,7 @@
             flowLayoutPanel2 = new FlowLayoutPanel();
             Update_Buttons = new Panel();
             Cb_Dept2 = new ComboBox();
+            Row_Message = new Label();
             Txt_Age2 = new TextBox();
             Txt_Address2 = new TextBox();
             Txt_Lname2 = new TextBox();
@@ -209,6 +210,17 @@
             Cb_Dept2.Size = new Size(121, 23);
             Cb_Dept2.TabIndex = 11;
             // 
+            // Row_Message
+            // 
+            Row_Message.AutoSize = true;
+            Row_Message.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Row_Message.ForeColor = Color.Black;
+            Row_Message.Location = new Point(3, 63);
+            Row_Message.Name = "Row_Message";
+            Row_Message.Size = new Size(209, 25);
+            Row_Message.TabIndex = 1;
+            Row_Message.Text = "Click On Any Row =>";
+            // 
             // Txt_Age2
             // 
             Txt_Age2.Location = new Point(544, 20);
@@ -306,6 +318,7 @@
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(927, 492);
             Controls.Add(flowLayoutPanel2);
+            Controls.Add(Row_Message);
             Controls.Add(Button_Close);
             Controls.Add(dataGridView1);
             Controls.Add(flowLayoutPanel1);
@@ -322,6 +335,7 @@
             Update_Buttons.ResumeLayout(false);
             Update_Buttons.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -348,5 +362,6 @@
         private Label label3;
         private Label label2;
         private System.Windows.Forms.Timer Width_Timer;
+        private Label Row_Message;
     }
 }

@@ -138,3 +138,4 @@ D:\Code\C#\Projects\CRUD Project\CRUD Project\obj\Debug\net9.0-windows\CRUD Proj
 D:\Code\C#\Projects\CRUD Project\CRUD Project\obj\Debug\net9.0-windows\CRUD Pro.4E7E7E72.Up2Date
 D:\Code\C#\Projects\CRUD Project\CRUD Project\obj\Debug\net9.0-windows\CRUD_Project.AddForm.resources
 D:\Code\C#\Projects\CRUD Project\CRUD Project\obj\Debug\net9.0-windows\CRUD_Project.Properties.Resources.resources
+D:\Code\C#\Projects\CRUD Project\CRUD Project\obj\Debug\net9.0-windows\CRUD Project.sourcelink.json

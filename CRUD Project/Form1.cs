@@ -1,4 +1,4 @@
-using CRUD_Project.Models;
+﻿using CRUD_Project.Models;
 
 namespace CRUD_Project;
 
@@ -107,6 +107,7 @@ public partial class Form1 : Form
 
     private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
     {
+        Row_Message.Visible = false;
         Height = false;
         Height_Timer.Start();
         Width_Timer.Start();
@@ -127,27 +128,26 @@ public partial class Form1 : Form
 
     private void Width_Timer_Tick(object sender, EventArgs e)
     {
-        if (isCollapsed)
+        if (Width) 
         {
-           
             Update_Buttons.Width -= 12;
             if (Update_Buttons.Width >= Update_Buttons.MaximumSize.Width)
             {
                 Width_Timer.Stop();
-                isCollapsed = false; 
+                Width = false; 
             }
         }
-        else
+        else 
         {
-
             Update_Buttons.Width += 12;
             if (Update_Buttons.Width <= Update_Buttons.MinimumSize.Width)
             {
                 Width_Timer.Stop();
-                isCollapsed = true;
+                Width = true; 
             }
         }
     }
+
 
 
 }
