@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Code\\C#\\Projects\\CRUD Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{152CA92B-1909-496E-B3A7-286C59A3EE63}|CRUD Project\\CRUD Project.csproj|d:\\code\\c#\\projects\\crud project\\crud project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{152CA92B-1909-496E-B3A7-286C59A3EE63}|CRUD Project\\CRUD Project.csproj|solutionrelative:crud project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{152CA92B-1909-496E-B3A7-286C59A3EE63}|CRUD Project\\CRUD Project.csproj|d:\\code\\c#\\projects\\crud project\\crud project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{152CA92B-1909-496E-B3A7-286C59A3EE63}|CRUD Project\\CRUD Project.csproj|solutionrelative:crud project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{152CA92B-1909-496E-B3A7-286C59A3EE63}|CRUD Project\\CRUD Project.csproj|D:\\Code\\C#\\Projects\\CRUD Project\\crud project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{152CA92B-1909-496E-B3A7-286C59A3EE63}|CRUD Project\\CRUD Project.csproj|solutionrelative:crud project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{152CA92B-1909-496E-B3A7-286C59A3EE63}|CRUD Project\\CRUD Project.csproj|d:\\code\\c#\\projects\\crud project\\crud project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{152CA92B-1909-496E-B3A7-286C59A3EE63}|CRUD Project\\CRUD Project.csproj|solutionrelative:crud project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddForm.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\Projects\\CRUD Project\\CRUD Project\\AddForm.cs",
+              "RelativeDocumentMoniker": "CRUD Project\\AddForm.cs",
+              "ToolTip": "D:\\Code\\C#\\Projects\\CRUD Project\\CRUD Project\\AddForm.cs",
+              "RelativeToolTip": "CRUD Project\\AddForm.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwB0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T19:32:17.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddForm.cs [Design]",
+              "DocumentMoniker": "D:\\Code\\C#\\Projects\\CRUD Project\\CRUD Project\\AddForm.cs",
+              "RelativeDocumentMoniker": "CRUD Project\\AddForm.cs",
+              "ToolTip": "D:\\Code\\C#\\Projects\\CRUD Project\\CRUD Project\\AddForm.cs [Design]",
+              "RelativeToolTip": "CRUD Project\\AddForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:42:40.022Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\Projects\\CRUD Project\\CRUD Project\\Form1.cs",
+              "RelativeDocumentMoniker": "CRUD Project\\Form1.cs",
+              "ToolTip": "D:\\Code\\C#\\Projects\\CRUD Project\\CRUD Project\\Form1.cs",
+              "RelativeToolTip": "CRUD Project\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T11:05:43.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Code\\C#\\Projects\\CRUD Project\\CRUD Project\\Form1.cs",
+              "RelativeDocumentMoniker": "CRUD Project\\Form1.cs",
+              "ToolTip": "D:\\Code\\C#\\Projects\\CRUD Project\\CRUD Project\\Form1.cs [Design]",
+              "RelativeToolTip": "CRUD Project\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:04:08.857Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
