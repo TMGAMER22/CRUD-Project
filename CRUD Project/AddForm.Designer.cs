@@ -243,7 +243,7 @@
             Button_Cancel_Add.Name = "Button_Cancel_Add";
             Button_Cancel_Add.Size = new Size(199, 101);
             Button_Cancel_Add.TabIndex = 2;
-            Button_Cancel_Add.Text = "Cancel";
+            Button_Cancel_Add.Text = "Close";
             Button_Cancel_Add.UseVisualStyleBackColor = false;
             Button_Cancel_Add.Click += Button_Cancel_Add_Click;
             Button_Cancel_Add.MouseEnter += Button_Cancel_Add_MouseEnter;

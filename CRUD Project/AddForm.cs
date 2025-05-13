@@ -22,7 +22,7 @@ namespace CRUD_Project
         {
             if (String.IsNullOrWhiteSpace(Txt_Fname.Text) || String.IsNullOrWhiteSpace(Txt_Lname.Text) || String.IsNullOrWhiteSpace(Txt_Age.Text) || String.IsNullOrWhiteSpace(Txt_Address.Text))
             {
-                MessageBox.Show("Please fill all fields");
+                MessageBox.Show("Please fill All Student Info");
             }
             else
             {
@@ -39,8 +39,7 @@ namespace CRUD_Project
                     db.Students.Add(s);
                     db.SaveChanges();
                     MessageBox.Show("Student Added Successfully");
-                    this.Close();
-
+                    Txt_Fname.Text = Txt_Lname.Text = Txt_Age.Text = Txt_Address.Text = "";
                 }
             }
 

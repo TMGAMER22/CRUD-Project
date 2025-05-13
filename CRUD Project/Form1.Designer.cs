@@ -42,7 +42,6 @@
             flowLayoutPanel2 = new FlowLayoutPanel();
             Update_Buttons = new Panel();
             Cb_Dept2 = new ComboBox();
-            Row_Message = new Label();
             Txt_Age2 = new TextBox();
             Txt_Address2 = new TextBox();
             Txt_Lname2 = new TextBox();
@@ -52,6 +51,7 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            Row_Message = new Label();
             Width_Timer = new System.Windows.Forms.Timer(components);
             flowLayoutPanel1.SuspendLayout();
             Buttons_Panel.SuspendLayout();
@@ -198,6 +198,7 @@
             Update_Buttons.Controls.Add(label2);
             Update_Buttons.Controls.Add(label1);
             Update_Buttons.Location = new Point(3, 3);
+            Update_Buttons.MinimumSize = new Size(197, 0);
             Update_Buttons.Name = "Update_Buttons";
             Update_Buttons.Size = new Size(197, 126);
             Update_Buttons.TabIndex = 0;
@@ -205,46 +206,35 @@
             // Cb_Dept2
             // 
             Cb_Dept2.FormattingEnabled = true;
-            Cb_Dept2.Location = new Point(772, 20);
+            Cb_Dept2.Location = new Point(772, 30);
             Cb_Dept2.Name = "Cb_Dept2";
             Cb_Dept2.Size = new Size(121, 23);
             Cb_Dept2.TabIndex = 11;
             // 
-            // Row_Message
-            // 
-            Row_Message.AutoSize = true;
-            Row_Message.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Row_Message.ForeColor = Color.Black;
-            Row_Message.Location = new Point(3, 63);
-            Row_Message.Name = "Row_Message";
-            Row_Message.Size = new Size(209, 25);
-            Row_Message.TabIndex = 1;
-            Row_Message.Text = "Click On Any Row =>";
-            // 
             // Txt_Age2
             // 
-            Txt_Age2.Location = new Point(544, 20);
+            Txt_Age2.Location = new Point(544, 30);
             Txt_Age2.Name = "Txt_Age2";
             Txt_Age2.Size = new Size(46, 23);
             Txt_Age2.TabIndex = 10;
             // 
             // Txt_Address2
             // 
-            Txt_Address2.Location = new Point(544, 53);
+            Txt_Address2.Location = new Point(544, 63);
             Txt_Address2.Name = "Txt_Address2";
             Txt_Address2.Size = new Size(102, 23);
             Txt_Address2.TabIndex = 9;
             // 
             // Txt_Lname2
             // 
-            Txt_Lname2.Location = new Point(318, 55);
+            Txt_Lname2.Location = new Point(318, 65);
             Txt_Lname2.Name = "Txt_Lname2";
             Txt_Lname2.Size = new Size(78, 23);
             Txt_Lname2.TabIndex = 7;
             // 
             // Txt_Fname2
             // 
-            Txt_Fname2.Location = new Point(318, 21);
+            Txt_Fname2.Location = new Point(318, 31);
             Txt_Fname2.Name = "Txt_Fname2";
             Txt_Fname2.Size = new Size(78, 23);
             Txt_Fname2.TabIndex = 6;
@@ -254,7 +244,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.ButtonHighlight;
-            label6.Location = new Point(220, 21);
+            label6.Location = new Point(220, 31);
             label6.Name = "label6";
             label6.Size = new Size(93, 21);
             label6.TabIndex = 5;
@@ -266,7 +256,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(222, 55);
+            label4.Location = new Point(222, 65);
             label4.Name = "label4";
             label4.Size = new Size(91, 21);
             label4.TabIndex = 3;
@@ -277,7 +267,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(668, 20);
+            label3.Location = new Point(668, 30);
             label3.Name = "label3";
             label3.Size = new Size(102, 21);
             label3.TabIndex = 2;
@@ -288,7 +278,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(468, 54);
+            label2.Location = new Point(468, 64);
             label2.Name = "label2";
             label2.Size = new Size(70, 21);
             label2.TabIndex = 1;
@@ -299,11 +289,22 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(468, 20);
+            label1.Location = new Point(468, 30);
             label1.Name = "label1";
             label1.Size = new Size(40, 21);
             label1.TabIndex = 0;
             label1.Text = "Age";
+            // 
+            // Row_Message
+            // 
+            Row_Message.AutoSize = true;
+            Row_Message.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Row_Message.ForeColor = Color.Black;
+            Row_Message.Location = new Point(3, 63);
+            Row_Message.Name = "Row_Message";
+            Row_Message.Size = new Size(209, 25);
+            Row_Message.TabIndex = 1;
+            Row_Message.Text = "Click On Any Row =>";
             // 
             // Width_Timer
             // 

@@ -5,8 +5,8 @@ namespace CRUD_Project;
 public partial class Form1 : Form
 {
     CRUDContext db;
-    bool Height;
-    bool Width;
+    bool Height_Bar_Animation;
+    bool Width_Bar_Animation;
     int Id;
     public Form1()
     {
@@ -16,7 +16,7 @@ public partial class Form1 : Form
 
     private void Form1_Load(object sender, EventArgs e)
     {
-        dataGridView1.DataSource = db.Students.Select(n => new { n.St_Id, n.St_FName, n.St_LName, n.St_Age, n.St_Address, DeptName = n.St_Dept.Dept_Name }).ToList();
+        Student_Services.LoadStudents(dataGridView1);
     }
     AddForm AddForm;
     private void Add_Button_Click(object sender, EventArgs e)
@@ -24,7 +24,7 @@ public partial class Form1 : Form
         Opacity = 0.70;
         AddForm = new AddForm();
         AddForm.ShowDialog();
-        dataGridView1.DataSource = db.Students.Select(n => new { n.St_Id, n.St_FName, n.St_LName, n.St_Age, n.St_Address, DeptName = n.St_Dept.Dept_Name }).ToList();
+        Student_Services.LoadStudents(dataGridView1);
         Opacity = 1;
 
     }
@@ -36,13 +36,13 @@ public partial class Form1 : Form
 
     private void Height_Timer_Tick(object sender, EventArgs e)
     {
-        if (Height)
+        if (Height_Bar_Animation)
         {
 
             Buttons_Panel.Height -= 7;
             if (Buttons_Panel.Height <= Buttons_Panel.MinimumSize.Height)
             {
-                Height = false;
+                Height_Bar_Animation = false;
                 Height_Timer.Stop();
             }
         }
@@ -52,7 +52,7 @@ public partial class Form1 : Form
             Buttons_Panel.Height += 7;
             if (Buttons_Panel.Height >= Buttons_Panel.MaximumSize.Height)
             {
-                Height = true;
+                Height_Bar_Animation = true;
                 Height_Timer.Stop();
             }
         }
@@ -75,8 +75,10 @@ public partial class Form1 : Form
             db.Students.Remove(s);
             db.SaveChanges();
             MessageBox.Show("Student Removed!", "", MessageBoxButtons.OK);
-            dataGridView1.DataSource = db.Students.Select(n => new { n.St_Id, n.St_FName, n.St_LName, n.St_Age, n.St_Address, DeptName = n.St_Dept.Dept_Name }).ToList();
+            Student_Services.LoadStudents(dataGridView1);
         }
+        Height_Timer.Start();
+
     }
 
     private void Update_Button_Click(object sender, EventArgs e)
@@ -100,7 +102,7 @@ public partial class Form1 : Form
         db.SaveChanges();
         Txt_Address2.Text = Txt_Age2.Text = Txt_Lname2.Text = Txt_Fname2.Text = "";
         MessageBox.Show("Student Updated!", "", MessageBoxButtons.OK);
-        dataGridView1.DataSource = db.Students.Select(n => new { n.St_Id, n.St_FName, n.St_LName, n.St_Age, n.St_Address, DeptName = n.St_Dept.Dept_Name }).ToList();
+        Student_Services.LoadStudents(dataGridView1);
         Height_Timer.Start();
 
     }
@@ -108,7 +110,7 @@ public partial class Form1 : Form
     private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
     {
         Row_Message.Visible = false;
-        Height = false;
+        Height_Bar_Animation = false;
         Height_Timer.Start();
         Width_Timer.Start();
         Id = (int)dataGridView1.CurrentRow.Cells[0].Value;
@@ -128,13 +130,13 @@ public partial class Form1 : Form
 
     private void Width_Timer_Tick(object sender, EventArgs e)
     {
-        if (Width) 
+        if (Width_Bar_Animation) 
         {
             Update_Buttons.Width -= 12;
             if (Update_Buttons.Width >= Update_Buttons.MaximumSize.Width)
             {
                 Width_Timer.Stop();
-                Width = false; 
+                Width_Bar_Animation = false; 
             }
         }
         else 
@@ -143,7 +145,7 @@ public partial class Form1 : Form
             if (Update_Buttons.Width <= Update_Buttons.MinimumSize.Width)
             {
                 Width_Timer.Stop();
-                Width = true; 
+                Width_Bar_Animation = true; 
             }
         }
     }
